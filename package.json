@@ -1,0 +1,17 @@
+{
+    "name": "mysql-api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "nodemon ./src/server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mysql2": "^2.3.3"
+    },
+    "devDependencies": {
+        "dotenv": "^10.0.0",
+        "nodemon": "^2.0.15"
+    }
+}
