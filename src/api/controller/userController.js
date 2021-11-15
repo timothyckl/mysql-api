@@ -9,10 +9,23 @@ module.exports = {
         });
     },
     getOneUser: (req, res) => {
-        const { id } = req.params
+        const { id } = req.params;
         user.selecOne(id, (err, data) => {
             if (err) res.status(404).send(err);
             else res.status(200).send(data);
-        })
+        });
+    },
+    createUser: (req, res) => {
+        // Check for duplicate data in db
+        const {
+            full_name,
+            username,
+            bio,
+            date_of_birth
+        } = req.body;
+        user.createOne(full_name, username, bio, date_of_birth, (err, data) => {
+            if (err) res.status(404).send(err);
+            else res.status(201).send(`User ${username} successfully created!`);
+        });
     }
 };
