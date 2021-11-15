@@ -30,7 +30,7 @@ This will be where I update my solutions for BED Practical 6 onwards :D
     ┗ yarn.lock
 </details>
 
-Checklist:
+## Checklist
 
 - [ ] Add PUT methods for /user/:userid enpoint to edit/update data 
 - [ ] Add data validation feature for duplicate entries
