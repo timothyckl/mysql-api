@@ -2,14 +2,14 @@
 const db = require('../../config/dbConfig');
 
 module.exports = {
-    selectAll: () => {
+    selectAll: (callback) => {
         const cnx = db.getConn();
         const selectAllQuery = "SELECT * FROM ??;";
-        const values = "users";
+        const values = "user";
 
         cnx.query(selectAllQuery, values, (err, data) => {
-            if (err) return err;
-            else return data;
+            if (err) return callback(err);
+            else return callback(null, data);
         });
     },
 }
