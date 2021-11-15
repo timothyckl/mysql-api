@@ -41,9 +41,29 @@ This will be where I update my solutions for BED Practical 6 onwards :D
 - [ ] Add routes for /friends endpoint
 - [ ] Reformat code to use async await
 
+## Quick Start
 
+1. Clone repo
 
+```sh
+git clone https://github.com/timothyckl/mysql-api
+```
 
+2. Install all packages
+
+```sh
+yarn install
+# or
+npm install
+```
+
+3. Run server.js
+
+```sh
+yarn start
+# or
+npm start
+```
 
 
 
