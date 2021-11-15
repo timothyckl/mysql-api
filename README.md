@@ -8,6 +8,7 @@ This will be where I update my solutions for BED Practical 6 onwards :D
     <br>
 </summary>
 <br>
+
     mysql-api/
     ┣ src/
     ┃ ┣ api/
@@ -28,6 +29,7 @@ This will be where I update my solutions for BED Practical 6 onwards :D
     ┣ package.json
     ┣ README.md
     ┗ yarn.lock
+    
 </details>
 
 ## Checklist
