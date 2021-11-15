@@ -8,7 +8,7 @@ userRouter.route('/')
     .post();
 
 userRouter.route('/:id')
-    .get()
+    .get(user.getOneUser)
     .put();
 
 // userRouter.route('/:id/friends')

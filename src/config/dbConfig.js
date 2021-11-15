@@ -1,5 +1,6 @@
 // database config and connection
 const mysql = require('mysql2');
+require('dotenv').config({ path: '/home/tim/Desktop/mysql-api/src/config/.env' })
 
 module.exports = {
     getConn: () => {

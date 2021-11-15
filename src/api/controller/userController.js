@@ -8,4 +8,11 @@ module.exports = {
             else res.status(200).send(data);
         });
     },
+    getOneUser: (req, res) => {
+        const { id } = req.params
+        user.selecOne(id, (err, data) => {
+            if (err) res.status(404).send(err);
+            else res.status(200).send(data);
+        })
+    }
 };
