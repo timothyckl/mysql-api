@@ -13,18 +13,20 @@ This will be where I update my solutions for BED Practical 6 onwards :D
     ┣ src/
     ┃ ┣ api/
     ┃ ┃ ┣ controller/
+    ┃ ┃ ┃ ┣ app.js
     ┃ ┃ ┃ ┗ userController.js
     ┃ ┃ ┣ middleware/
-    ┃ ┃ ┃ ┣ friendRouter.js
-    ┃ ┃ ┃ ┗ userRouter.js
+    ┃ ┃ ┃ ┣ async.js
+    ┃ ┃ ┃ ┗ errHandler.js
     ┃ ┃ ┣ model/
     ┃ ┃ ┃ ┗ user.js
     ┃ ┃ ┗ routes/
-    ┃ ┃   ┗ user.js
+    ┃ ┃   ┣ friendRouter.js
+    ┃ ┃   ┗ userRouter.js
     ┃ ┣ config/
+    ┃ ┃ ┣ .env
     ┃ ┃ ┗ dbConfig.js
     ┃ ┗ server.js
-    ┣ .env
     ┣ .gitignore
     ┣ package.json
     ┣ README.md
