@@ -36,7 +36,7 @@ This will be where I update my solutions for BED Practical 6 onwards :D
 
 ## Checklist
 
-- [ ] Add PUT methods for /user/:userid enpoint to edit/update data 
+- [x] Add PUT methods for /user/:userid enpoint to edit/update data 
 - [ ] Add routes for /friends endpoint
 - [ ] Reformat code to use async await
 
