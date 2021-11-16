@@ -32,8 +32,9 @@ module.exports = {
         });
     },
     updateOne: (id, fullName, uname, bio, dob, callback) => {
-        const updateQuery = "UPDATE user SET full_name = ?, username = ?, bio = ?, date_of_birth = ? WHERE id = ?;";
-        const values = [fullName, uname, bio, dob, id];
+        const updateQuery = "UPDATE ?? SET ?? = ?, ?? = ?, ?? = ?, ?? = ? WHERE ?? = ?;";
+        const values = ['user', 'full_name', 'username', 'bio', 'date_of_birth', 'id',
+            fullName, uname, bio, dob, id];
         cnx.query(updateQuery, values, (err, data) => {
             if (err) return callback(err);
             else return callback(null, data);
