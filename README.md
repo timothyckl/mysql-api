@@ -44,13 +44,13 @@ This will be where I update my solutions for BED Practical 6 onwards :D
 
 > __Note:__ A database has to be created beforehand to use this.
 
-1. Clone repo
+1. Clone repo:
 
 ```sh
 git clone https://github.com/timothyckl/mysql-api
 ```
 
-2. Install all packages
+2. Install all packages:
 
 ```sh
 yarn install
@@ -58,7 +58,7 @@ yarn install
 npm install
 ```
 
-3. Run server.js
+3. Run server.js:
 
 ```sh
 yarn start
