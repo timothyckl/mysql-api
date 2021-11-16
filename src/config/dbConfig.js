@@ -9,7 +9,8 @@ module.exports = {
             user: process.env.DB_USER,
             password: process.env.DB_PASS,
             database: 'friendbook',
-            dateStrings: true
+            dateStrings: true,
+            connectionLimit: 10
         })
         return pool;
     }

@@ -22,12 +22,21 @@ module.exports = {
         });
     },
     createOne: (fullName, uname, bio, dob, callback) => {
-        const createOneQuery = "INSERT INTO user (full_name, username, bio, date_of_birth) VALUES (?, ?, ?, ?);";
-        const values = [fullName, uname, bio, dob];
+        const createQuery = "INSERT INTO ?? (??, ??, ??, ??) VALUES (?, ?, ?, ?);";
+        const values = ['user', 'full_name', 'username', 'bio', 'date_of_birth',
+            fullName, uname, bio, dob];
 
-        cnx.query(createOneQuery, values, (err, data) => {
+        cnx.query(createQuery, values, (err, data) => {
             if (err) return callback(err);
             else return callback(null, data);
         });
     },
-}
+    updateOne: (id, fullName, uname, bio, dob, callback) => {
+        const updateQuery = "UPDATE user SET full_name = ?, username = ?, bio = ?, date_of_birth = ? WHERE id = ?;";
+        const values = [fullName, uname, bio, dob, id];
+        cnx.query(updateQuery, values, (err, data) => {
+            if (err) return callback(err);
+            else return callback(null, data);
+        });
+    },
+};

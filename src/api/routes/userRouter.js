@@ -9,7 +9,7 @@ userRouter.route('/')
 
 userRouter.route('/:id')
     .get(user.getOneUser)
-    .put();
+    .put(user.updateUser);
 
 // userRouter.route('/:id/friends')
 //     .get()
