@@ -11,9 +11,9 @@ userRouter.route('/:id')
     .get(user.getOneUser)
     .put(user.updateUser);
 
-// userRouter.route('/:id/friends')
-//     .get()
-//     .post()
-//     .delete();
+userRouter.route('/:id/friends')
+    .get()
+    .post()
+    .delete();
 
 module.exports = userRouter;

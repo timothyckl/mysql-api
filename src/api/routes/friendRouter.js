@@ -2,6 +2,11 @@
 const express = require('express');
 const friendRouter = express.Router();
 
-friendRouter.route('/').get((req, res) => res.send('test'));
+friendRouter.route('/')
+    .get();
+
+friendRouter.route('/:friendID')
+    .post()
+    .delete();
 
 module.exports = friendRouter;
